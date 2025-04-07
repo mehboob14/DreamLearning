@@ -1,0 +1,23 @@
+.navbar{
+margin: 0px;
+padding: 0%;
+ border: 2px solid pink;
+ display: flex;
+ flex-direction: row;
+ justify-items: end;
+ justify-content: end;
+}
+.nav-items{
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+   
+}
+.nav-items li{
+    text-decoration: none;
+}
+
+.main-icon{
+    
+
+}
