@@ -1,4 +1,5 @@
-import Hcard from "./Hcard";
+import { useState } from "react";
+import Hcard from "../components/Hcard";
 
 const data = [
   {
@@ -28,10 +29,12 @@ const data = [
   },
 ];
 
+
 export default function Home() {
+    const [mobileview, setMobileview] = useState(false);
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+     <div className="grid gap-7 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-start">
         {data.map((item, index) => (
           <Hcard key={index} title={item.title} image={item.image} units={item.units} />
         ))}
