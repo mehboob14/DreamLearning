@@ -25,7 +25,7 @@ export default function CreateCourse() {
     const payload = {
       title,
       subtopics: subtopics.filter((s) => s.trim() !== ""),
-    };
+    }; // this may be handles during the post request will be made
     console.log("Submitting:", payload);
   };
 

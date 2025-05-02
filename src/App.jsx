@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/CreateCourse" element={<CreateCourse />} />
         <Route path="/Settings" element={<Settings />} />
-        {/* <Route path="/UserProfile" element={<UserProfile />} /> */}
+        <Route path="/UserProfile" element={<UserProfile />} /> 
       </Routes>
       </div>
       </div>
