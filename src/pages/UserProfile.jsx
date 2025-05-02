@@ -5,7 +5,8 @@ import { Card, CardBody, CardFooter, Button, Typography } from "@material-tailwi
 export default function UserProfile() {
         const [isLogin, setLogin] = useState(false);
         const [isSignup, setSignup] = useState(false);
-
+  
+        const [name, setName] = useState('Sample User'); 
     return (
         isLogin ? (
             <div className="min-h-screen bg-gray-100 p-6">
@@ -15,7 +16,7 @@ export default function UserProfile() {
                             User Profile
                         </Typography>
                         <Typography variant="h6" color="blue-gray">
-                            Welcome, User!
+                            Welcome, {name}!
                         </Typography>
                     </CardBody>
                 </Card>
